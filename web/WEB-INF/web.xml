@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	 version="6.0">
+         
+     <servlet>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SignInServlet</servlet-name>
+    <servlet-class>SignInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignInServlet</servlet-name>
+    <url-pattern>/SignInServlet</url-pattern>
+  </servlet-mapping>
+  
+   <welcome-file-list>  
+   <welcome-file>index.jsp</welcome-file>  
+  </welcome-file-list>  
+  
+  <servlet>
+        <servlet-name>NavHomeServlet</servlet-name>
+        <servlet-class>NavHomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NavHomeServlet</servlet-name>
+        <url-pattern>/NavHomeServlet</url-pattern>
+    </servlet-mapping>
+  
+
+
+
+</web-app>

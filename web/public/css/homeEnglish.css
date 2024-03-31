@@ -1,0 +1,60 @@
+.flexing {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+@media screen and (min-width: 1000px) {
+  .flexing {
+    flex-direction: row;
+  }
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  transition: 0.5s ease;
+}
+.section--yellow {
+  background-color: #eac435;
+}
+.section--pink {
+  background-color: #e40066;
+}
+.section--green {
+  background-color: #03cea4;
+}
+.section:hover, .section:active, .section:focus {
+  flex: 3;
+}
+.section:hover .title, .section:active .title, .section:focus .title {
+  transform: translate(-50%, -50%) rotate(0);
+}
+@media screen and (min-width: 1000px) {
+  .section:hover .title, .section:active .title, .section:focus .title {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+.section .title {
+  font-family: "Fredoka One";
+  font-size: 5rem;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 1000px) {
+  .section .title {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section--La {
+  background-color: #25ce03;
+}
