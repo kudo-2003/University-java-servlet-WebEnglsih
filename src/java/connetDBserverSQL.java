@@ -2,7 +2,7 @@ import java.sql.*;
 public class connetDBserverSQL {
     private Connection connect() {
         // SQL Server JDBC connection string
-        String url = "jdbc:sqlserver://LAPTOP-VS8A1FBT\\SQLEXPRESS;databaseName=MyDatabase;user=sa;password=010203;encrypt=false;trustServerCertificate=true";        
+        String url = "jdbc:sqlserver://127.0.1:\\SQLEXPRESS;databaseName=MyDatabase;user=sa;password=010203;encrypt=false;trustServerCertificate=true";        
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
